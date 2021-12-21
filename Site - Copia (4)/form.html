@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href= "Site.css">
+	<title>Formulário</title>
+
+<center>
+    <div class = "menu">
+        <ul>
+    	    <li style="font-family: monospace;"><a href="index.html">Home</a></li>
+    	    <li style="font-family: monospace;"><a href="Produtos.html">Produtos</a></li>
+    	    <li style="font-family: monospace;"><a href="Sobre.html">Sobre</a></li>
+    	    <li style="font-family: monospace;"><a href="Contato.html">Contato</a></li>
+    	    <li style="font-family: monospace;"><a href="tabela.html">Tabela</a></li>
+    	    <li style="font-family: monospace;"><a href="form.html">Formulário</a></li>
+        </ul>
+    </div>
+
+</head>
+
+<body class="formulario"> 
+
+	<form action="https://teste-reusetech.000webhostapp.com/prova5.php" method="post">
+
+	    <fieldset class="borda">
+
+		<legend class="legenda">Dados pessoais:</legend>
+
+		    <p></p>
+		    <label for="NC" class="label">Nome Completo:</label>
+    	    <input type="text" name="nomecompleto" placeholder="Nome Completo" id="NC" class="resposta  placeholder">
+    	    <br>
+    	    <p></p>
+    	    <label for="Sex" class="label">Sexo:</label>
+    	    <input type="radio" name="sexo" value="mas" id="Sex">
+    	    <label for="Sex" class="label">Masculino</label>
+    	    <input type="radio" name="sexo" value="fem" id="Sex">
+    	    <label for="Sex" class="label">Feminino</label>
+    	    <p></p>
+    	    <label for="age" class="label">Idade atual:</label>
+    	    <input type="number" name="idade" id="age" class="resposta  placeholder" placeholder="Insira a sua idade atual">
+    	    <p></p>
+            
+            <p></p>
+            <label for="GM" class="label">Gmail para contato:</label>
+            <input type="email" name="gmail" id="GM" class="resposta  placeholder" placeholder="Informe Gmail para contato">
+            <p></p>
+            <label for="TEL" class="label">Telefone para contato:</label>
+            <input type="tel" name="telefone" id="TEL" class="resposta  placeholder" placeholder="Informe telefone">
+
+	    </fieldset>
+
+	    <fieldset class="borda">
+
+		<legend class="legenda">Endereço:</legend>
+
+		    <p></p>
+		    <label for="casa" class="label">Número da casa:</label>
+		    <input type="number" name="numerodacasa" id="casa" class="resposta  placeholder" placeholder="Informe número da casa">
+
+            <p></p>
+            <label for="City" class="label">Cidade:</label>
+            <input type="text" name="Cidade" id="City" class="resposta  placeholder" placeholder="Informe cidade">
+            <p></p>
+            <label for="CY" class="label">País:</label>
+            <input type="radio" name="País" id="CY" value="1">
+            <label for="CY" class="label">Brasil</label>
+            <input type="radio" name="País" id="CY" value="2">
+            <label for="CY" class="label">Estados Unidos</label>
+            <input type="radio" name="País" id="CY" value="3">
+            <label for="CY" class="label">China</label>
+            <p></p>
+            <label for="BO" class="label">Bairro:</label>
+            <input type="text" name="Bairro" id="BO" class="resposta  placeholder" placeholder="Informe bairro">
+            <p></p>
+            <label for="AV" class="label">Avenida:</label>
+            <input type="text" name="Avenida" id="AV" class="resposta  placeholder" placeholder="Informe avenida">
+            <p></p>
+
+	    </fieldset>
+
+	    <fieldset class="borda">
+
+		<legend class="legenda">Orçamento:</legend>
+
+		    <p></p>
+		    <label for="itens" class="label">Produto que você deseja comprar:</label>
+            <input type="text" name="prod" id="itens" class="resposta  placeholder" placeholder="Informe o produto">
+            <p></p>
+		    <label for="quan" class="label">Quantidade de produtos desejados:</label>
+		    <input type="number" name="quant" class="resposta  placeholder" placeholder="Informe quantidade" id="quan">
+		    <p>
+		    <label for="prec" class="label">Informe o preço visualizado:</label>
+		    <input type="number" name="preco"  step="any" class="resposta  placeholder" placeholder="Informe preço" id="prec">
+		    <p></p>
+		    <label for="pay" class="label">Forma de pagamento:</label>
+		    <p>
+		    <input type="radio" name="paga" id="pay" value="boleto">
+		    <label for="pay" class="label">Boleto</label>
+		    <input type="radio" name="paga" id="pay" value="débito">
+		    <label for="pay" class="label">Cartão de débito</label>
+		    <input type="radio" name="paga" id="pay" value="crédito">
+		    <label for="pay" class="label">Cartão de crédito</label>
+		    <input type="radio" name="paga" id="pay" value="pix">
+		    <label for="pay" class="label">Pix</label>
+		    <p>
+		    <label for="des" class="label">Porcentagem de desconto à negociar:</label>
+		    <input type="number" name="desc" id="des" class="resposta  placeholder" placeholder="Informe desconto requerido">
+
+	    </fieldset>
+
+	    <input type="submit" name="enviar" class="submit_reset  enviar">
+	    <input type="reset" name="resetar" class="submit_reset  resetar">
+
+        <p></p>
+
+    </form>
+
+</body>
+
+</html>
